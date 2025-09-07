@@ -32,9 +32,8 @@ test("Deve fazer um checkout", async function () {
 	const getOrder = new GetOrder(orderRepository);
 	const outputGetOrder = await getOrder.execute(outputCheckout.orderId);
 	expect(outputGetOrder.orderId).toBeDefined();
-	expect(outputGetOrder.name).toBe("John Doe");
-	expect(outputGetOrder.email).toBe("john.doe@gmail.com");
+	expect(outputGetOrder.name).toBe("Hugo Sabara");
+	expect(outputGetOrder.email).toBe("sabarah@gmail.com");
 	expect(outputGetOrder.amount).toBe(1199);
-	//expect(outputGetOrder.courseTitle).toBe("Clean Code e Clean Architecture");
 	expect(outputGetOrder.status).toBe("confirmed");
 });

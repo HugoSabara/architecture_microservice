@@ -1,3 +1,4 @@
+import CourseRepository from "../repository/CourseRepository";
 import OrderRepository from "../repository/OrderRepository";
 
 export default class GetOrder {

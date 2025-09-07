@@ -1,4 +1,8 @@
 {
+  "name": "architecture_microservice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "docker:build": "docker build -t architecture_microservice docker",
     "docker:run": "docker run -it -v $(pwd)/.:/app architecture_microservice bash",
@@ -7,10 +11,5 @@
     "compose:exec": "docker compose -f docker/docker-compose.yaml exec -it backend bash",
     "compose:db:down": "docker compose -f docker/docker-compose.yaml -v down db",
     "compose:db:up": "docker compose -f docker/docker-compose.yaml up db -d"
-  },
-  "dependencies": {
-    "@types/amqp": "^0.2.8",
-    "amqp": "^0.2.7",
-    "axios": "^1.11.0"
   }
 }

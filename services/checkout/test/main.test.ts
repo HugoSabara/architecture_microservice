@@ -19,6 +19,7 @@ test("Deve fazer um checkout", async function () {
 	const paymentGateway = new PaymentGatewayHttp();
 	const queue = new RabbitMQAdapter();
 	await queue.connect();
+	console.log ("aqui")
 	const checkout = new Checkout(orderRepository, courseRepository, paymentGateway, queue);
 	const input = {
 		courseId: "83e88f3a-49a5-43e0-a07a-8dd9e64c0915",

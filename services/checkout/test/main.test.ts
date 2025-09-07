@@ -23,8 +23,8 @@ test("Deve fazer um checkout", async function () {
 	const checkout = new Checkout(orderRepository, courseRepository, paymentGateway, queue);
 	const input = {
 		courseId: "83e88f3a-49a5-43e0-a07a-8dd9e64c0915",
-		name: "John Doe",
-		email: "john.doe@gmail.com",
+		name: "Hugo Sabara",
+		email: "sabarah@gmail.com",
 		creditCardToken: "123456789"
 	};
 	const outputCheckout = await checkout.execute(input);
